@@ -1,8 +1,7 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
-
-const ownerSchema = new Schema({
+const daySchema = new Schema({
     date:  String,
     time: String,
     food: [
@@ -10,6 +9,6 @@ const ownerSchema = new Schema({
     ]
 })
 
-const Owner = mongoose.model('Owner', ownerSchema)
+const Day = mongoose.model('Day', daySchema)
 
-module.exports = Owner
+module.exports = Day
