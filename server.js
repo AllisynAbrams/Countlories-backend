@@ -10,7 +10,7 @@ const express = require("express");
 const app = express();
 
 // other import
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const foodRouter = require("./controllers/food");
 const dayRouter = require("./controllers/day")
 
@@ -18,7 +18,7 @@ const dayRouter = require("./controllers/day")
 // MIDDLEWARE
 NODE_ENV === "production" ? app.use(cors(corsOptions)) : app.use(cors());
 app.use(express.json());
-app.use(morgan("tiny")); //logging
+// app.use(morgan("tiny")); //logging
 
 
 // app.get("/", (req, res) => {
