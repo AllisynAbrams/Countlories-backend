@@ -1,6 +1,5 @@
 const { Schema, model } = require("mongoose");
-const mongoose = require("../db/connection");
-const Day = require('./day')
+
 
 const foodSchema = new Schema(
   {
