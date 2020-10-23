@@ -2,13 +2,13 @@ const { Schema, model } = require("mongoose");
 const mongoose = require("../db/connection");
 const Day = require('./day')
 
-const catSchema = new Schema(
+const foodSchema = new Schema(
   {
       foodItem: String,
       calories: Number
   },
 );
 
-const Food = model("Food", catSchema);
+const Food = model("Food", foodSchema);
 
 module.exports = Food;
