@@ -3,6 +3,22 @@ const Food = require('../models/food');
 const { Router } = require("express");
 const router = Router();
 
+// SEED ROUTE
+router.get('/seed', (req, res) => {
+	const seedDay = [
+		{ date: 'Monday' },
+		{ date: 'Tuesday' },
+		{ date: 'Wednesday' },
+		{ date: 'Thursday' },
+		{ date: 'Friday' },
+		{ date: 'Saturday' },
+		{ date: 'Sunday' },
+	];
+	Day.create(seedDay, (err, data) => {
+		res.json(data);
+	});
+});
+
 router.get('/', async (req,res) => {
     const day = await Day.find({}).populate('food')
     res.json({status: 200, data: day})
