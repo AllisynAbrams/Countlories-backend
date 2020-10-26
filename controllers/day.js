@@ -24,6 +24,14 @@ router.get('/', async (req,res) => {
     res.json({status: 200, data: day})
 })
 
+router.post('/:dayId', async (req, res) => {
+    const food = await Food.create(req.body)
+    const day = await Day.findById(req.params.dayId)
+    day.food.push(food._id)
+    day.save()
+    res.json(food)
+})
+
 router.post('/', async (req, res) => {
     const day = await Day.create(req.body)
     res.json({ status: 200, data: day})
