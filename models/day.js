@@ -2,6 +2,7 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
 const daySchema = new Schema({
+    day: String,
     date:  {type: Date, default: Date.now},
     time: String,
     food: [
