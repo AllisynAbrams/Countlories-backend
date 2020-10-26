@@ -6,13 +6,13 @@ const router = Router();
 // SEED ROUTE
 router.get('/seed', (req, res) => {
 	const seedDay = [
-		{ date: 'Monday' },
-		{ date: 'Tuesday' },
-		{ date: 'Wednesday' },
-		{ date: 'Thursday' },
-		{ date: 'Friday' },
-		{ date: 'Saturday' },
-		{ date: 'Sunday' },
+		{ day: 'Monday' },
+		{ day: 'Tuesday' },
+		{ day: 'Wednesday' },
+		{ day: 'Thursday' },
+		{ day: 'Friday' },
+		{ day: 'Saturday' },
+		{ day: 'Sunday' },
 	];
 	Day.create(seedDay, (err, data) => {
 		res.json(data);
