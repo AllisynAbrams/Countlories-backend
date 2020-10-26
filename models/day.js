@@ -3,8 +3,7 @@ const Schema = mongoose.Schema
 
 const daySchema = new Schema({
     day: String,
-    date:  {type: Date, default: Date.now},
-    time: String,
+    date: String,
     food: [
         { ref: 'Food', type: Schema.Types.ObjectId}
     ]
