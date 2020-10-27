@@ -14,7 +14,6 @@ router.get('/seed', (req, res) => {
 		{ day: 'Saturday' },
 		{ day: 'Sunday' },
     ];
-    Day.deleteMany({})
 	Day.create(seedDay, (err, data) => {
 		res.json(data);
 	});
@@ -54,8 +53,9 @@ router.put('/:dayId/addFood/:foodId', async (req, res)=>{
 })
 
 
-router.delete("/:id", async (req, res) => {
-    res.json(await Day.findByIdAndRemove(req.params.id));
+router.delete("/", async (req, res) => {
+    res.json(await Day.deleteMany({}))
+    // res.json(await Day.findByIdAndRemove(req.params.id));
   });
 
 module.exports = router
