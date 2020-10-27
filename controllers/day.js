@@ -13,7 +13,8 @@ router.get('/seed', (req, res) => {
 		{ day: 'Friday' },
 		{ day: 'Saturday' },
 		{ day: 'Sunday' },
-	];
+    ];
+    Day.deleteMany({})
 	Day.create(seedDay, (err, data) => {
 		res.json(data);
 	});
