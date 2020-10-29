@@ -1,7 +1,7 @@
 # Countlories 
 ___
 
-Countlories is an application that's designed to count a user's daily calories intake based on the type of food they consume on a given time of a day. This app can help users stay on track with their health goals and make storing/retrieving historical food intake data manageable.
+Countlories is an application that's designed to count a user's daily calories intake based on the type of food they consume on a given time of a day. This app can help users stay on track with their health goals and make tracking/planning weekly food intakes manageable.
 
 ## Team Members
 ___
@@ -17,10 +17,10 @@ Many of us wish to stay on top of our health routines wether be excercising or a
 ## Countlories Links
 ___
 
-+ [Deployment] (https://countlories.herokuapp.com/)
-+ [Github] (https://github.com/AllisynAbrams/Countlories-backend)
++ [Deployment](https://countlories.herokuapp.com/)
++ [Github](https://github.com/AllisynAbrams/Countlories-backend)
 
-## Tech/Framwork
+## Tech/Framework
 ___
 
 + JavaScript
